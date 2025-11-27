@@ -1,19 +1,15 @@
-# make-com-automation-library# seo-keyword-cluster-tool
-Python script to cluster keywords by semantic similarity for content planning.
+# make-com-automation-library
+Exported Make.com workflows (JSON) with step-by-step guides.
 
-## Features
-- CSV input of keywords
-- Text vectorization (TF-IDF / embeddings)
-- KMeans-based clustering
-- Output cluster CSV for content buckets
+## Included workflows
+- facebook-auto-post.json — schedule + post to Pages
+- seo-report-export.json — daily keyword snapshot to Google Sheets
 
-## Usage
-pip install -r requirements.txt
-python src/cluster.py --input keywords.csv --output clusters.csv
+Open the JSON files in Make.com (Import) and update your tokens.
 
-seo-keyword-cluster-tool/
-├─ data/
-├─ src/
-│  └─ cluster.py
+
+make-com-automation-library/
+├─ workflows/
+│  ├─ facebook-auto-post.json
+│  └─ seo-report-export.json
 ├─ README.md
-└─ requirements.txt
